@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Sublime can autocomplete basic document tags (called a boilerplate) via typing 'html' & hit Enter -->
+	<title>Basic HTML reference</title>
+</head>
+<body>
+	<h2>Headings 1-6</h2>
+
+	<h1>This is an h1 heading.</h1>
+	<h2>This is an h2 heading.</h2>
+	<h3>This is an h3 heading.</h3>
+	<h4>This is an h4 heading.</h4>
+	<h5>This is an h5 heading.</h5>
+	<h6>This is an h6 heading.</h6>
+	<!-- This is a comment. Shorcut:select a line & CMD + / -->
+
+	<h2>Basic text and Paragraphs</h2>
+	I can either write text without any tags,
+	<p>or, I can us the &lt;p&gt; tag to denote a block-element pargraph.</p>
+	<p>Note: notice the in-code use of strings "&amp;lt;" and "&amp;gt;" to act as escape characters to display the less than or greater than signs (and in this sentence, "&amp;amp;" being used for the ampersand), without confusing the browser into thinking they are tags.</p>
+	<p>You can create inline <b>bold</b>, <i>italicized</i>, <u>underlined</u>, or <s>strikethrough</s> text using &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, and &lt;s&gt; tags, respectively (although this isn't necessarily the best way to do this anymore).</p>
+	<p>Since HTML5, It's better to <strong>bolden</strong> and <em>italicize</em> characters using the &lt;strong&gt; and &lt;em&gt; (emphasis) tags, since these denote the actual structure of the HTML and not their styling.</p>
+
+	<h2>Lists:</h2>
+	<p>There are two types of lists: Ordered (&lt;ol&gt;), and unordered (&lt;ul&gt;) lists. Both lists are populated by list items (&lt;li&gt;).</p>
+	<ul>
+		<li>Unordered</li>
+		<li>list.</li>
+	</ul>
+	<ol>
+		<li>Ordered</li>
+		<li>list.</li>
+	</ol>
+	<ul>
+		<li>You can also</li>
+		<li><strong>bold,</strong></li>
+		<li><em>italicize,</em></li>
+		<ol>
+			<li>and nest</li>
+			<li>lists</li>
+			<ul>
+				<li>inside</li>
+			</ul>
+			<li>of lists.</li>
+		</ol>
+	</ul>
+
+	<h2>DIVs and SPANs</h2>
+	<p>These tags won't be too useful until styling is involved. Both divs and spans are good for grouping items together</p>
+	<div>
+		<p>
+			This paragraph is contained in a &lt;div&gt;, which is a block-level generic container.
+		</p>
+	</div>
+	<span>
+		<p>
+			This paragraph is contained in a &lt;span&gt;, which is an inline container.
+		</p>
+	</span>
+
+	<h2>HTML Tags</h2>
+	<ul>
+		<li>Images (&lt;img&gt;) are self-closing tags which use a source (src) link to display either a local or hosted image<img src="http://photos.gograph.com/thumbs/CSP/CSP995/k16745249.jpg"></li>
+		<li>Links, or anchor tags (&lt;a&gt;) are inline elements, not self-closing, and require a href to <a href="http://www.google.com">link to a page</a>. Note that if you want to link to an internet address, you need to include the http:// link, otherwise the browser will think you are linking to local files.</li>
+	</ul>
+</body>
+</html>
