@@ -61,8 +61,150 @@
 
 	<h2>HTML Tags</h2>
 	<ul>
-		<li>Images (&lt;img&gt;) are self-closing tags which use a source (src) link to display either a local or hosted image<img src="http://photos.gograph.com/thumbs/CSP/CSP995/k16745249.jpg"></li>
+		<li>Images (&lt;img&gt;) are self-closing tags which use a source (src) link to display either a local or hosted image <img src="http://photos.gograph.com/thumbs/CSP/CSP995/k16745249.jpg"></li>
 		<li>Links, or anchor tags (&lt;a&gt;) are inline elements, not self-closing, and require a href to <a href="http://www.google.com">link to a page</a>. Note that if you want to link to an internet address, you need to include the http:// link, otherwise the browser will think you are linking to local files.</li>
 	</ul>
+
+	<h2>Tables</h2>
+	<p>Table elements (&lt;table&gt;) consist of table rows (&lt;tr&gt;), and those rows are populated with table data (&lt;td&gt;).</p>
+	
+	<!-- Note: Typically borders and other stylings, resizing, etc. should be handled by CSS, but for sake of illustrations we're going to set it directly here. -->
+	
+	<table border="1"> 
+		<tr>
+			<td>Row 1, Data 1</td>
+			<td>Row 1, Data 2</td>
+		</tr>
+		<tr>
+			<td>Row 2, Data 1</td>
+			<td>Row 2, Data 2</td>
+		</tr>
+	</table>
+	<p>To create headings, you would populate the first table row with table headers (&lt;th&gt;), instead of table data</p>
+	<table border="1">
+		<tr>
+			<th>Heading 1</th>
+			<th>Heading 2</th>
+		</tr>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+		</tr>
+	</table>
+
+	<p>A slightly more robust way of making tables in HTML5 is to create a table head (&lt;thead&gt;), and a table body (&lt;tbody&gt;) and populate them with the appropriate table rows.</p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>&lt;thead&gt; 1</th>
+				<th>&lt;thead&gt; 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>&lt;tbody&gt; data 1</td>
+				<td>&lt;tbody&gt; data 2</td>
+			</tr></thead>
+		</tbody>
+	</table>
+
+	<p>You can also include images and links in the tables</p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Images</th>
+				<th>Links</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><img src="http://photos.gograph.com/thumbs/CSP/CSP995/k16745249.jpg"></td>
+				<td><a href="https://www.Google.com">Google</a></td>
+			</tr></thead>
+		</tbody>
+	</table>
+
+	<h2>Forms, Inputs and Validations</h2>	
+
+	<p>Here we're going to focus on 3 main elements, the form (&lt;form&gt;), inputs (&lt;input&gt;), labels (&lt;label&gt;), and simple validation. (Note that the following examples are not going to be function, simce this is meant to be a pure HTML reference, and a back end will not be present here).</p>
+	
+	<h3>Forms and Basic Inputs</h3>
+
+	<p>Form tags have two major attributes: action, which specifies the address the form data is sent to, and method, which is the type of HTTP request.</p>
+
+	<p>Inputs types are determined by specifying the Type attribute. Name attributes can also be specified in the input tag, which will help for query requests on submission.</p>
+
+	<p>Inputs can be nested inside of label tags (&lt;label&gt;), which are useful for impaired browsing and appropriate assignments.</p>
+
+	<p>Certain inputs can have a Placeholder attribute assigned to leave placeholder values in the input automatically: <input type="text" name="example" placeholder="Like this."></p>
+	
+	<form action="" method="">
+		Some common types of input:
+		<label>Text input: <input type="text" name="Text Input"></label>
+		<label> Password input: <input type="password" name="Password Input"></label>
+		<label> Date input: <input type="date" name="Date Input"></label>
+		<label> Color input: <input type="color" name="Color Input"></label>
+		<label> File input: <input type="file" name="File input"></label>
+		<label> Radio Button input: <input type="radio" name="Radio Input"></label>
+		<label> Checkbox input: <input type="checkbox" name="Checkbox Input"></label>
+		<label> Submit input: <input type="submit" name="Submit Input"></label>
+		<button>Button</button>
+	</form>
+
+	<p>An alternative  and more robust syntax is to set a For attribute in the label, and link it to an input outside label via an Id attribute for the input</p>
+	
+	<form action="" method="">
+		<label for="username">Username label where for="Username"</label>
+		<input id="username" type="text" name=username placeholder="text input with id='username'">
+	</form>
+
+	<h3>Basic Validations</h3>
+
+	<p>Some basic validations to form input can be done with basic HTML. Some common examples are ensuring a non-empty text empty (using the Required attribute), Emails can be validated by setting type to email, and passwords can have a character limit via a pattern attribute with a title attribute outlining the requirements.</p>
+
+	<form action="" method="">
+		<label for="username"></label>
+		<input id="username" type="text" placeholder="Must not be empty" required>
+		<input id="username" type="email" placeholder="Must be email" required>
+
+		<label for="password"></label>
+		<input id="password" type="password" pattern=".{8,16}" title="8 to 16 characters" required>
+		<input type="submit">
+	</form>
+
+	<h3>Radio Buttons, Dropdowns, and Text Areas</h3>
+
+	<p>By giving Radio-type inputs the same Name attribute, you can limit a single choice to a group of radio buttons by with that name.</p>
+	<form>
+		<label for="1">Can pick me,</label>
+		<input id="1" type="radio" name="choice">
+		<label for="2">or pick me,</label>
+		<input id="2" type="radio" name="choice">
+		<label for="3">But not both.</label>
+		<input id="3" type="radio" name="choice">
+	</form>
+
+	<p>For inputs to be useful, you need to set a Value attribute for the form to return the results with.</p>
+	<form>
+		<label for="1">Returns a value of 1</label>
+		<input id="1" type="radio" name="value" value="1">
+		<label for="2">Returns a value of 2</label>
+		<input id="2" type="radio" name="value" value="2">
+		<input type="submit" name="value">
+	</form>
+
+	<p>To create a dropdown menu, you want to use a select tag (&lt;select&gt;), populated with option tags (&lt;option&gt;). To a return a value, set a Name attribute in the select tag, and set the desired return values via the Value attribute in the option tags</p>
+	<form>
+		<select name="dropdownOption">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+		</select>
+		<input type="submit">
+	</form>
+
+	<p>Text areas can be created via the text area tag (&lt;textarea&gt;), and set to a specific size by setting the Rows and Cols attibutes.</p>
+	<form>
+		<textarea rows="10" cols="50"></textarea>
+	</form>
 </body>
 </html>
