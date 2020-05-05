@@ -1,1 +1,1 @@
-This is repository for notes, examples and projects inspired by The Web Developer Bootcamp on Udemy. Some examples and notes are similar to those in covered in the course but are not clones and still should showcase practice and practical skill.
+This is repository for notes, examples and projects inspired by The Web Developer Bootcamp on Udemy (https://www.udemy.com/course/the-web-developer-bootcamp/). Some examples and notes are similar to those in covered in the course but are not clones and still should showcase practice and practical skill.
