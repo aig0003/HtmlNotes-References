@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Colors</title>
+	<link rel="stylesheet" type="text/css" href="CSSColors.css">
+</head>
+<body>
+	<h1>CSS Practice</h1>
+	<p>To start with CSS, you first need to create a .css file, and link it to a desired HTML file, this can be done via a link tag (&lt;link&gt;) in the head (&lt;head&gt;) section of the HTML. The link tag should have 3 attributes:</p>
+	<ul>
+		<li>rel="stylesheet"</li>
+		<li>type="text/css"</li>
+		<li>href="LinkToYourCSSFile.css"</li>
+	</ul>
+
+	<h3>Colors in CSS</h3>
+	<p>There are many ways of introducing and assigning color into your HTML/CSS. You can change the color of an element in CSS using the "color" attribute.</p>
+	<ol>
+		<li>There are many named, predetermined colors to use</li>
+		<ul>
+			<li id="basiccolor">This can be something as simple as red, green, blue, etc.</li>
+			<li id="lessbasiccolor">Or less common colors, like CornFlowerBlue, DarkOrchid, MediumTurquoise, etc.</li>
+			<li>You can find a list of all 140 named CSS colors <a href="https://colours.neilorangepeel.com/">here</a>.</li>
+		</ul>
+		<li>Another way is to use base 16, hexadecimal values to determine color, which allow near unlimited customizable colors Note that hex values are preceded by an octothorp (#) symbol.</li>
+		<ul>
+			<li id="hexcolor1">This is #A97B20</li>
+			<li id="hexcolor2">This is #FF1493</li>
+			<li>It's good to remember that in hex colors the digits correspond to a RGB value, meaning the first two digits correspond to a red value, the next two to a green value, and the last two to a Blue value (# R R G G B B).</li>
+		</ul>
+		<li>You can also use RGB channels, which is made of 3 channels: Red, Green, and Blue, with each value of those channels being 0-255.</li>
+		<ul>
+			<li id="rgbcolor1">This is rgb(0, 255, 0).</li>
+			<li id="rgbcolor2">This is rgb(50, 100, 150).</li>
+			<li>This isn't necessarily better or worse than using hexadecimal format, its mainly a different syntax which may or may not be easier to understand.</li>
+		</ul>
+		<li>Finally, there is RGBA, which is similar to the RGB method, except it has an additional channel, alpha, which determines transparency from decimal values ranging from 0 to 1</li>
+		<ul>
+			<li id="rgbacolor1">This has full transparency rgba(0, 0, 255, 1)</li>
+			<li id="rgbacolor2">This has half transparency rgba(0, 0, 255, .5)</li>
+			<li id="rgbacolor3">This has 1/10 transparency rgba(0, 0, 255, .1)</li>
+		</ul>
+	</ol>
+</body>
+</html>

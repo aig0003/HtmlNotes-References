@@ -1,0 +1,36 @@
+#basiccolor {
+	color: red;
+}
+
+#lessbasiccolor{
+	color: mediumturquoise;
+}
+
+#hexcolor1 {
+	color: #A97B20;
+}
+
+#hexcolor2 {
+	color: #FF1493;
+}
+
+#rgbcolor1{
+	color: rgb(0, 255, 0);
+}
+
+#rgbcolor2{
+	color: rgb(50, 100, 150);
+}
+
+#rgbacolor1{
+	color: rgba(0,0,255,1);
+}
+
+#rgbacolor2 {
+	color: rgba(0,0,255,0.5);
+}
+
+#rgbacolor3 {
+	color: rgba(0,0,255,0.1);
+}
+

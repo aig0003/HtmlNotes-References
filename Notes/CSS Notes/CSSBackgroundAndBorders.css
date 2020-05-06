@@ -1,0 +1,17 @@
+body {
+	background: url(https://img.etsystatic.com/il/167792/1468606531/il_340x270.1468606531_1mo6.jpg?version=0);
+	color: #888;
+	background-repeat: no-repeat;
+}
+#colorbackground {
+	background: #22FF99;
+	color: #000;
+}
+#borders {
+	border-width: 2px;
+	border-style: dashed;
+	border-color: red;
+	border: 3px solid blue;
+}
+
+

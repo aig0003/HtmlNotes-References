@@ -1,0 +1,50 @@
+/* Element */
+/* Applies to all selected elements */
+li {
+
+}
+
+/* Class */
+/* Applied to all elements within an assigned class */
+.class {
+
+}
+
+/* Id */
+/* Applied to all elements assigned a specified id */
+#id {
+
+}
+
+/* Star (*) */
+/* Applies to all elements on a page */
+* {
+
+}
+
+/* Descendant */ /*Applies to all elements decended. In the example this means
+this applies to all .descendant class descended from a list item, decsended from an
+unordered list */
+ul li .decendant {
+
+}
+
+/* Adjacent */
+/* Applies to "siblings", or elements directly after. In the example, the ul would be paired with h3, but nothing before h3 and no li's which may be inside the ul.*/
+h3 + ul {
+
+}
+
+/* Attribute */
+/* Applies to elements meeting particular attribute criteria. In the example, it should be all anchor tags whose href attribute is assigned to a google url */
+a[href="https://www.google.com"] {
+
+}
+
+/* Nth of Type */
+/* Applies to every nth iteration of an element in a group, so the example will only apply to every 3rd ul */
+ul:nth-of-type(3) {
+
+}
+
+/* Other selectors can be found here: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
