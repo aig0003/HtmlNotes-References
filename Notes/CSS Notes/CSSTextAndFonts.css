@@ -1,0 +1,101 @@
+/*
+Good resource for seeing some common default fonts and which machines they are available on:
+https://www.cssfontstack.com/
+*/
+
+/** 
+	font-family: Selects the type of font
+*/
+p {
+	font-family: "ariel";
+	/* Note, it's good practice to place fonts in quotations since they may begin with number characters, which would not be valid CSS */
+}
+
+h1 {
+	font-family: "georgia";
+}
+
+/* To add custom fonts, you need to embed a link tag in the header of the html file, linked to the location of the font file. This can be local or online,
+For example: 
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">;
+To include it you simply declare the specified font name. A good resource would be font.google.com, as it provides many fonts and embeded links and suggested tags on how to use them. */
+
+h2 {
+	font-family: 'Indie Flower', cursive; 
+}
+
+
+/**
+	font-size: selects the size of the font
+*/
+p {
+	font-size: 200px;
+
+}
+
+/* There are different units for font size, there are absolute units, like pixels (px), or dynamic units, like em units, which is equal to the parent element font-size */
+
+span {
+	font-size: 2.0em;
+	/* This means the font will be 2x bigger than the parent element, so say the parent is a paragraph of font-size 200px, it would be dynamically set to 400px */
+}
+
+/* The default em size varies by browser, but typically it is 16px, meaning if there is no set parent value, a font-size of 1em will be equivelant to 16px. Because of this, it is common practice to set a base font size to the body, and assign other values based on that via em. */
+
+body {
+	font-size: 10px;
+}
+h1 {
+	font-size: 3.0em;
+}
+p{
+	font-size: 2.0em;
+}
+span {
+	font-size: 2.0em;
+	/* Note: remember that em is all about inheriting from parent values, so if span is nested into a paragraph, it would be 2x larger than the paragragh value. */
+}
+
+
+/**
+	font-weight: determines how bold or light the lines of a font are. 
+*/
+/* There are preset values for this, such as 'bold', certain fonts will also allow a numeric value, which ranges from 100-800 in multiples of 100 (i.e. only values like 100, 200, ..., 800, etc. are acceptable.)  */
+p {
+	font-weight: bold;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+/** 
+	line-height: Changes the height by multiples of the base line height, determined by the font itself
+*/
+p {
+	line-height: 1.5;
+}
+
+/** 
+	text-align: changes the text alignment justification, defaults to left.
+*/
+h1 {
+	text-align: right;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	text-align: left;
+}
+
+/** 
+	text-decoration: used to give text an underline, strikethrough, or overline; 
+*/
+p {
+	text-decoration: underline;
+}
+h1 {
+	text-decoration: line-through; /* strikethrough */
+}
+

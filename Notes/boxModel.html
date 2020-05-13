@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box model</title>
+	<link rel="stylesheet" type="text/css" href="boxModel.css">
+</head>
+<body>
+<p>In this model, every element is represented by as a retangulat box. there are 4 properties, or 4 edges to every box which can be manipulated to emulate shape, or have a certain effect:</p>
+<ol>
+	<li>Content, or the actual words/objects</li>
+	<li>Padding</li>
+	<li>Border, the edge of the content &amp; it's padding</li>
+	<li>Margin, or the space outside of the border</li>
+</ol>
+
+<p><em>Note: For illustrative purpose appropriate elements will be assigned a 1px dashed red outline</em></p>
+
+<h1>Content</h1>
+<p>The content can be manipulated by a variety of properties, some basic ones are width and height</p>
+<p class="outline" id="example1">This is width 400px</p>
+<p class="outline" id="example2">This is width 50% of the parent (the body)</p>
+
+<h1>Padding</h1>
+<p> Padding is the the space between the content and the border.</p>
+<p id="example3">This has a padding of 50px between the content and it's border</p>
+<p id="example4">You can also change the padding of a specified side via padding-left, padding-right, padding-top, and padding-bottom properties. Or, you can use the shorthand format: "padding: topval rightval bottomval leftval;", this is set to 25px, 50px, 100px, and 200px, respectively.</p>
+
+<h1>Margin</h1>
+<p>Similar to padding, but on the outside of the border.</p>
+
+<p id="example5">You can use similar properties as padding, but with margin instead. You can also use the same style shorthand. This is set to "margin: 10px 20px 40px 80px;".</p>
+<p id="example6">You can also use the auto value to automatically fill the margins (and padding as well) as far as the content allows. This paragraph, for instance, will have auto values for the left and right margins, and 0 margins for the top and bottom (as well as a set width for demonstration), which will automatically center it.</p>
+<p><em>Another shorthand for assigning left/right and top/bottom to the same values would be like so: "margin: top/botValue left/rightValue;"</em></p>
+
+</body>
+</html>
+
+

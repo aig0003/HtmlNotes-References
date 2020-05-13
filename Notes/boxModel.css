@@ -1,0 +1,32 @@
+.outline {
+	outline: 1px dashed red;
+}
+
+#example1 {
+	width: 400px;
+}
+
+#example2 {
+	width: 50%;
+}
+
+#example3 {
+	border: 1px solid blue;
+	padding: 50px;
+}
+
+#example4 {
+	border: 1px solid blue;
+	padding: 25px 50px 100px 200px;
+}
+
+#example5 {
+	border: 1px solid blue;
+	margin: 10px 20px 40px 80px;
+}
+
+#example6 {
+	width: 640px;
+	border: 1px solid blue;
+	margin: 0 auto;
+}
